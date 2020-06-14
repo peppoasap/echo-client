@@ -56,7 +56,7 @@ echo.generateEverySecond({test: "I am looping every 1 second"}, 1, 5);
 echo.stop();
 ```
 
-##Version 1 - Under Construction
+## Version 1 - Under Construction
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
