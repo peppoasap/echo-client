@@ -21,7 +21,7 @@ npm install echo-client
 You need to use Express Server to serve the file.
 Add this line to your Express Server.
 
-```
+```js
 app.use("/echo", express.static(__dirname + "/node_modules/echo-client"));
 ```
 Next add it to your HTML.
