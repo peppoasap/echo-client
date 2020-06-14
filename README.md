@@ -57,8 +57,6 @@ echo.stop();
 ```
 ### Version 1.0.0 - Under Construction
 
-### Version 1.0.0 - Under Construction
-
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
