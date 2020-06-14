@@ -6,7 +6,7 @@ Echo Client is a client-side JS library to test WebSocket with Echo Messages.
 
 ### Manual Download
 Download the echo.js file and add it to your project folder.
-
+[Download here](https://github.com/peppoasap/echo-client/blob/master/echo.js)
 ```html
 <script src="echo.js"></script>
 ```
@@ -55,6 +55,7 @@ echo.generateEverySecond({test: "I am looping every 1 second"}, 1, 5);
 //Stop the generateEverySecond method if loop is running.
 echo.stop();
 ```
+### Version 1.0.0 - Under Construction
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
