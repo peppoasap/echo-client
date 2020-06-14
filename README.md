@@ -21,7 +21,7 @@ npm install echo-client
 You need to use Express Server to serve the file.
 Add this line to your Express Server.
 
-```
+```js
 app.use("/echo", express.static(__dirname + "/node_modules/echo-client"));
 ```
 Next add it to your HTML.
@@ -55,6 +55,8 @@ echo.generateEverySecond({test: "I am looping every 1 second"}, 1, 5);
 //Stop the generateEverySecond method if loop is running.
 echo.stop();
 ```
+### Version 1.0.0 - Under Construction
+
 ### Version 1.0.0 - Under Construction
 
 ## Contributing
