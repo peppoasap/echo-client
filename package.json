@@ -1,0 +1,18 @@
+{
+  "name": "echo-client",
+  "version": "1.0.1",
+  "main": "echo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "echo",
+    "websocket",
+    "client side",
+    "testing",
+    "library"
+  ],
+  "author": "peppoasap",
+  "license": "ISC",
+  "description": "A simple client side library to test WebSocket with Echo Messages."
+}
