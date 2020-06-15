@@ -42,15 +42,16 @@ echo.whenReply((msg) => {
     console.log(msg.data);
 });
 
-//generate(object, n)
-//This method send n messages with object as content to Echo Server
+//generate(callback, n)
+//This method send n messages with the callback that generate an object as content to Echo Server
 //You will receive the same messages.
-echo.generate({hello: "Hello World!"}, 2);
+// IMPORTANT: The Callback must return an Object!
+echo.generate(() => {return {hello: "Hello World!"}}, 2);
 
-//generateEverySecond(object, second, n)
-//This method send n messages with object as content to Echo Server
+//generateEverySecond(callback, second, n)
+//This method send n messages with the callback that generate an object as content to Echo Server
 //and repeat this every setted second/s.
-echo.generateEverySecond({test: "I am looping every 1 second"}, 1, 5);
+echo.generateEverySecond(() => {return {test: "I am looping every 1 second"}}, 1, 5);
 
 //Stop the generateEverySecond method if loop is running.
 echo.stop();
@@ -61,4 +62,4 @@ echo.stop();
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+ISC
