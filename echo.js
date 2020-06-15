@@ -1,4 +1,3 @@
-
 class Echo {
 
     constructor(url) {
@@ -39,15 +38,16 @@ class Echo {
         }
     }
 
-    generate(object, reqNumber){
+    generate(callback, reqNumber){
         for (let i = 0; i < reqNumber; i++){
-          this.send(JSON.stringify(object));
+            let object = callback();
+            this.send(JSON.stringify(object));
         }
     }
 
-    generateEverySecond(object, second, numberOfMessage) {
+    generateEverySecond(callback, second, numberOfMessage) {
         this._loop = setInterval(() => {
-            this.generate(object, numberOfMessage);
+            this.generate(callback, numberOfMessage);
         }, second * 1000);
     }
 
@@ -63,3 +63,5 @@ class Echo {
     }
 
 }
+
+export { Echo };
